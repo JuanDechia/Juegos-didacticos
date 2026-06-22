@@ -1,0 +1,567 @@
+{
+  "id": "capitals-main-run-v1",
+  "title": "Capitales del Mundo",
+  "mode": "deterministic_rounds",
+  "rounds": [
+    {
+      "round": 1,
+      "difficultyTier": 1,
+      "country": "Francia",
+      "capital": "París",
+      "prompt": "¿Cuál es la capital de Francia?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Berlín", "fullText": "Berlín es la capital de Alemania." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — París", "fullText": "París es la capital de Francia.", "isCorrect": true },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Brasilia", "fullText": "Brasilia es la capital de Brasil." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Roma", "fullText": "Roma es la capital de Italia." }
+      ],
+      "explanation": "París es la capital de Francia. Es una de las ciudades más visitadas del mundo."
+    },
+    {
+      "round": 2,
+      "difficultyTier": 1,
+      "country": "Brasil",
+      "capital": "Brasilia",
+      "prompt": "¿Cuál es la capital de Brasil?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Brasilia", "fullText": "Brasilia es la capital de Brasil.", "isCorrect": true },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Río de Janeiro", "fullText": "Río de Janeiro es la ciudad más famosa de Brasil, pero no es la capital." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — São Paulo", "fullText": "São Paulo es la ciudad más grande de Brasil, pero no es la capital." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Buenos Aires", "fullText": "Buenos Aires es la capital de Argentina." }
+      ],
+      "explanation": "Brasilia es la capital de Brasil desde 1960, cuando reemplazó a Río de Janeiro."
+    },
+    {
+      "round": 3,
+      "difficultyTier": 1,
+      "country": "Japón",
+      "capital": "Tokio",
+      "prompt": "¿Cuál es la capital de Japón?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Osaka", "fullText": "Osaka es la segunda ciudad más grande de Japón, pero no es la capital." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Seúl", "fullText": "Seúl es la capital de Corea del Sur." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Tokio", "fullText": "Tokio es la capital de Japón.", "isCorrect": true },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Pekín", "fullText": "Pekín es la capital de China." }
+      ],
+      "explanation": "Tokio es la capital de Japón y la ciudad más poblada del mundo."
+    },
+    {
+      "round": 4,
+      "difficultyTier": 1,
+      "country": "Estados Unidos",
+      "capital": "Washington D. C.",
+      "prompt": "¿Cuál es la capital de Estados Unidos?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Nueva York", "fullText": "Nueva York es la ciudad más grande de EE. UU., pero no es la capital." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Los Ángeles", "fullText": "Los Ángeles es la segunda ciudad más grande de EE. UU., pero no es la capital." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Chicago", "fullText": "Chicago es una gran ciudad de EE. UU., pero no es la capital." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Washington D. C.", "fullText": "Washington D. C. es la capital de Estados Unidos.", "isCorrect": true }
+      ],
+      "explanation": "Washington D. C. es la capital federal de Estados Unidos desde 1800."
+    },
+    {
+      "round": 5,
+      "difficultyTier": 1,
+      "country": "Argentina",
+      "capital": "Buenos Aires",
+      "prompt": "¿Cuál es la capital de Argentina?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Buenos Aires", "fullText": "Buenos Aires es la capital de Argentina.", "isCorrect": true },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Montevideo", "fullText": "Montevideo es la capital de Uruguay." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Lima", "fullText": "Lima es la capital de Perú." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Santiago", "fullText": "Santiago es la capital de Chile." }
+      ],
+      "explanation": "Buenos Aires es la capital y ciudad más grande de Argentina."
+    },
+    {
+      "round": 6,
+      "difficultyTier": 2,
+      "country": "Canadá",
+      "capital": "Ottawa",
+      "prompt": "¿Cuál es la capital de Canadá?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Toronto", "fullText": "Toronto es la ciudad más grande de Canadá, pero no es la capital." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Vancouver", "fullText": "Vancouver es una gran ciudad de Canadá, pero no es la capital." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Ottawa", "fullText": "Ottawa es la capital de Canadá.", "isCorrect": true },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Montreal", "fullText": "Montreal es la segunda ciudad más grande de Canadá, pero no es la capital." }
+      ],
+      "explanation": "Ottawa es la capital de Canadá, elegida en 1857 por la Reina Victoria."
+    },
+    {
+      "round": 7,
+      "difficultyTier": 2,
+      "country": "México",
+      "capital": "Ciudad de México",
+      "prompt": "¿Cuál es la capital de México?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Guadalajara", "fullText": "Guadalajara es la segunda ciudad más grande de México, pero no es la capital." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Ciudad de México", "fullText": "Ciudad de México es la capital de México.", "isCorrect": true },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Monterrey", "fullText": "Monterrey es una gran ciudad industrial de México, pero no es la capital." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Cancún", "fullText": "Cancún es una ciudad turística de México, pero no es la capital." }
+      ],
+      "explanation": "Ciudad de México es la capital de México y una de las ciudades más grandes del mundo."
+    },
+    {
+      "round": 8,
+      "difficultyTier": 2,
+      "country": "Alemania",
+      "capital": "Berlín",
+      "prompt": "¿Cuál es la capital de Alemania?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Múnich", "fullText": "Múnich es la capital de Baviera, pero no de Alemania." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Hamburgo", "fullText": "Hamburgo es la segunda ciudad más grande de Alemania, pero no es la capital." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Frankfurt", "fullText": "Frankfurt es un centro financiero de Alemania, pero no es la capital." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Berlín", "fullText": "Berlín es la capital de Alemania.", "isCorrect": true }
+      ],
+      "explanation": "Berlín es la capital de Alemania desde la reunificación en 1990."
+    },
+    {
+      "round": 9,
+      "difficultyTier": 2,
+      "country": "Italia",
+      "capital": "Roma",
+      "prompt": "¿Cuál es la capital de Italia?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Roma", "fullText": "Roma es la capital de Italia.", "isCorrect": true },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Milán", "fullText": "Milán es el centro económico de Italia, pero no es la capital." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Venecia", "fullText": "Venecia es una famosa ciudad de Italia, pero no es la capital." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Florencia", "fullText": "Florencia es una ciudad histórica de Italia, pero no es la capital." }
+      ],
+      "explanation": "Roma es la capital de Italia. Es conocida como la Ciudad Eterna."
+    },
+    {
+      "round": 10,
+      "difficultyTier": 2,
+      "country": "España",
+      "capital": "Madrid",
+      "prompt": "¿Cuál es la capital de España?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Barcelona", "fullText": "Barcelona es la segunda ciudad más grande de España, pero no es la capital." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Sevilla", "fullText": "Sevilla es una gran ciudad española, pero no es la capital." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Valencia", "fullText": "Valencia es la tercera ciudad de España, pero no es la capital." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Madrid", "fullText": "Madrid es la capital de España.", "isCorrect": true }
+      ],
+      "explanation": "Madrid es la capital de España y su ciudad más grande."
+    },
+    {
+      "round": 11,
+      "difficultyTier": 3,
+      "country": "Reino Unido",
+      "capital": "Londres",
+      "prompt": "¿Cuál es la capital del Reino Unido?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Manchester", "fullText": "Manchester es una gran ciudad del norte de Inglaterra, pero no es la capital." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Edimburgo", "fullText": "Edimburgo es la capital de Escocia, pero no del Reino Unido." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Londres", "fullText": "Londres es la capital del Reino Unido.", "isCorrect": true },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Dublín", "fullText": "Dublín es la capital de Irlanda, no del Reino Unido." }
+      ],
+      "explanation": "Londres es la capital del Reino Unido y una de las ciudades más influyentes del mundo."
+    },
+    {
+      "round": 12,
+      "difficultyTier": 3,
+      "country": "China",
+      "capital": "Pekín",
+      "prompt": "¿Cuál es la capital de China?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Shanghái", "fullText": "Shanghái es la ciudad más grande de China, pero no es la capital." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Pekín", "fullText": "Pekín es la capital de China.", "isCorrect": true },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Guangzhou", "fullText": "Guangzhou es un gran centro comercial de China, pero no es la capital." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Chengdu", "fullText": "Chengdu es una gran ciudad del interior de China, pero no es la capital." }
+      ],
+      "explanation": "Pekín (Beijing) es la capital de China. Es sede del gobierno y del Palacio Imperial."
+    },
+    {
+      "round": 13,
+      "difficultyTier": 3,
+      "country": "India",
+      "capital": "Nueva Delhi",
+      "prompt": "¿Cuál es la capital de India?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Mumbai", "fullText": "Mumbai es la ciudad más grande de India, pero no es la capital." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Kolkata", "fullText": "Kolkata es una gran ciudad de India, pero no es la capital." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Bangalore", "fullText": "Bangalore es el centro tecnológico de India, pero no es la capital." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Nueva Delhi", "fullText": "Nueva Delhi es la capital de India.", "isCorrect": true }
+      ],
+      "explanation": "Nueva Delhi es la capital de India y sede del gobierno federal."
+    },
+    {
+      "round": 14,
+      "difficultyTier": 3,
+      "country": "Australia",
+      "capital": "Canberra",
+      "prompt": "¿Cuál es la capital de Australia?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Sídney", "fullText": "Sídney es la ciudad más grande de Australia, pero no es la capital." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Melbourne", "fullText": "Melbourne es la segunda ciudad más grande de Australia, pero no es la capital." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Canberra", "fullText": "Canberra es la capital de Australia.", "isCorrect": true },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Brisbane", "fullText": "Brisbane es la tercera ciudad de Australia, pero no es la capital." }
+      ],
+      "explanation": "Canberra es la capital de Australia, construida especialmente como capital federal en 1913."
+    },
+    {
+      "round": 15,
+      "difficultyTier": 3,
+      "country": "Egipto",
+      "capital": "El Cairo",
+      "prompt": "¿Cuál es la capital de Egipto?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Alejandría", "fullText": "Alejandría es la segunda ciudad más grande de Egipto, pero no es la capital." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Luxor", "fullText": "Luxor es una ciudad histórica de Egipto, pero no es la capital." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Asuán", "fullText": "Asuán es una ciudad del sur de Egipto, pero no es la capital." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — El Cairo", "fullText": "El Cairo es la capital de Egipto.", "isCorrect": true }
+      ],
+      "explanation": "El Cairo es la capital de Egipto y la ciudad más grande de África."
+    },
+    {
+      "round": 16,
+      "difficultyTier": 4,
+      "country": "Corea del Sur",
+      "capital": "Seúl",
+      "prompt": "¿Cuál es la capital de Corea del Sur?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Seúl", "fullText": "Seúl es la capital de Corea del Sur.", "isCorrect": true },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Busan", "fullText": "Busan es la segunda ciudad más grande de Corea del Sur, pero no es la capital." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Incheon", "fullText": "Incheon es la tercera ciudad de Corea del Sur, pero no es la capital." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Pekín", "fullText": "Pekín es la capital de China, no de Corea del Sur." }
+      ],
+      "explanation": "Seúl es la capital de Corea del Sur y una de las mayores metrópolis del mundo."
+    },
+    {
+      "round": 17,
+      "difficultyTier": 4,
+      "country": "Turquía",
+      "capital": "Ankara",
+      "prompt": "¿Cuál es la capital de Turquía?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Estambul", "fullText": "Estambul es la ciudad más grande de Turquía, pero no es la capital." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Izmir", "fullText": "Izmir es la tercera ciudad de Turquía, pero no es la capital." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Ankara", "fullText": "Ankara es la capital de Turquía.", "isCorrect": true },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Bursa", "fullText": "Bursa es una gran ciudad de Turquía, pero no es la capital." }
+      ],
+      "explanation": "Ankara es la capital de Turquía desde 1923, cuando Atatürk fundó la República."
+    },
+    {
+      "round": 18,
+      "difficultyTier": 4,
+      "country": "Sudáfrica",
+      "capital": "Pretoria",
+      "prompt": "¿Cuál es la capital administrativa de Sudáfrica?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Ciudad del Cabo", "fullText": "Ciudad del Cabo es la capital legislativa de Sudáfrica, pero no la administrativa." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Johannesburgo", "fullText": "Johannesburgo es la ciudad más grande de Sudáfrica, pero no es la capital." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Durban", "fullText": "Durban es la tercera ciudad más grande de Sudáfrica, pero no es la capital." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Pretoria", "fullText": "Pretoria es la capital administrativa de Sudáfrica.", "isCorrect": true }
+      ],
+      "explanation": "Pretoria es la capital administrativa de Sudáfrica. Es la sede del gobierno ejecutivo."
+    },
+    {
+      "round": 19,
+      "difficultyTier": 4,
+      "country": "Nigeria",
+      "capital": "Abuya",
+      "prompt": "¿Cuál es la capital de Nigeria?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Lagos", "fullText": "Lagos es la ciudad más grande de Nigeria, pero no es la capital." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Kano", "fullText": "Kano es la segunda ciudad más grande de Nigeria, pero no es la capital." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Abuya", "fullText": "Abuya es la capital de Nigeria.", "isCorrect": true },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Ibadán", "fullText": "Ibadán es una gran ciudad de Nigeria, pero no es la capital." }
+      ],
+      "explanation": "Abuya (Abuja) es la capital de Nigeria desde 1991, reemplazando a Lagos."
+    },
+    {
+      "round": 20,
+      "difficultyTier": 4,
+      "country": "Vietnam",
+      "capital": "Hanói",
+      "prompt": "¿Cuál es la capital de Vietnam?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Ciudad Ho Chi Minh", "fullText": "Ciudad Ho Chi Minh es la ciudad más grande de Vietnam, pero no es la capital." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Hanói", "fullText": "Hanói es la capital de Vietnam.", "isCorrect": true },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Da Nang", "fullText": "Da Nang es la tercera ciudad de Vietnam, pero no es la capital." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Hue", "fullText": "Hue fue la capital imperial de Vietnam, pero ya no lo es." }
+      ],
+      "explanation": "Hanói es la capital de Vietnam y su segundo centro urbano más grande."
+    },
+    {
+      "round": 21,
+      "difficultyTier": 5,
+      "country": "Indonesia",
+      "capital": "Yakarta",
+      "prompt": "¿Cuál es la capital de Indonesia?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Surabaya", "fullText": "Surabaya es la segunda ciudad más grande de Indonesia, pero no es la capital." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Bandung", "fullText": "Bandung es la tercera ciudad de Indonesia, pero no es la capital." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Bali", "fullText": "Bali es una isla turística de Indonesia, pero no es la capital." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Yakarta", "fullText": "Yakarta es la capital de Indonesia.", "isCorrect": true }
+      ],
+      "explanation": "Yakarta (Jakarta) es la capital de Indonesia, aunque el país está planeando trasladarla a Nusantara."
+    },
+    {
+      "round": 22,
+      "difficultyTier": 5,
+      "country": "Tailandia",
+      "capital": "Bangkok",
+      "prompt": "¿Cuál es la capital de Tailandia?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Bangkok", "fullText": "Bangkok es la capital de Tailandia.", "isCorrect": true },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Chiang Mai", "fullText": "Chiang Mai es la segunda ciudad más grande de Tailandia, pero no es la capital." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Phuket", "fullText": "Phuket es un destino turístico de Tailandia, pero no es la capital." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Pattaya", "fullText": "Pattaya es una ciudad costera de Tailandia, pero no es la capital." }
+      ],
+      "explanation": "Bangkok es la capital de Tailandia. Su nombre oficial es el más largo del mundo."
+    },
+    {
+      "round": 23,
+      "difficultyTier": 5,
+      "country": "Marruecos",
+      "capital": "Rabat",
+      "prompt": "¿Cuál es la capital de Marruecos?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Casablanca", "fullText": "Casablanca es la ciudad más grande de Marruecos, pero no es la capital." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Marrakech", "fullText": "Marrakech es una famosa ciudad turística de Marruecos, pero no es la capital." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Rabat", "fullText": "Rabat es la capital de Marruecos.", "isCorrect": true },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Fez", "fullText": "Fez es una ciudad histórica de Marruecos, pero no es la capital." }
+      ],
+      "explanation": "Rabat es la capital de Marruecos y sede del gobierno real."
+    },
+    {
+      "round": 24,
+      "difficultyTier": 5,
+      "country": "Kazajistán",
+      "capital": "Astaná",
+      "prompt": "¿Cuál es la capital de Kazajistán?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Almatý", "fullText": "Almatý fue la antigua capital de Kazajistán, pero ya no lo es." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Shymkent", "fullText": "Shymkent es la segunda ciudad más grande de Kazajistán, pero no es la capital." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Tashkent", "fullText": "Tashkent es la capital de Uzbekistán, no de Kazajistán." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Astaná", "fullText": "Astaná es la capital de Kazajistán.", "isCorrect": true }
+      ],
+      "explanation": "Astaná es la capital de Kazajistán desde 1997. Anteriormente se llamó Nur-Sultán."
+    },
+    {
+      "round": 25,
+      "difficultyTier": 5,
+      "country": "Nueva Zelanda",
+      "capital": "Wellington",
+      "prompt": "¿Cuál es la capital de Nueva Zelanda?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Auckland", "fullText": "Auckland es la ciudad más grande de Nueva Zelanda, pero no es la capital." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Christchurch", "fullText": "Christchurch es la segunda ciudad más grande de Nueva Zelanda, pero no es la capital." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Wellington", "fullText": "Wellington es la capital de Nueva Zelanda.", "isCorrect": true },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Dunedin", "fullText": "Dunedin es una ciudad de la Isla Sur de Nueva Zelanda, pero no es la capital." }
+      ],
+      "explanation": "Wellington es la capital de Nueva Zelanda y la ciudad capital más austral del mundo."
+    },
+    {
+      "round": 26,
+      "difficultyTier": 6,
+      "country": "Perú",
+      "capital": "Lima",
+      "prompt": "¿Cuál es la capital de Perú?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Lima", "fullText": "Lima es la capital de Perú.", "isCorrect": true },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Cusco", "fullText": "Cusco fue la capital del Imperio Inca, pero no es la capital de Perú." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Arequipa", "fullText": "Arequipa es la segunda ciudad más grande de Perú, pero no es la capital." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Trujillo", "fullText": "Trujillo es la tercera ciudad de Perú, pero no es la capital." }
+      ],
+      "explanation": "Lima es la capital de Perú. Es una de las ciudades más grandes de América del Sur."
+    },
+    {
+      "round": 27,
+      "difficultyTier": 6,
+      "country": "Chile",
+      "capital": "Santiago",
+      "prompt": "¿Cuál es la capital de Chile?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Valparaíso", "fullText": "Valparaíso es el principal puerto de Chile, pero no es la capital." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Concepción", "fullText": "Concepción es la segunda ciudad más grande de Chile, pero no es la capital." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Santiago", "fullText": "Santiago es la capital de Chile.", "isCorrect": true },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Antofagasta", "fullText": "Antofagasta es una ciudad del norte de Chile, pero no es la capital." }
+      ],
+      "explanation": "Santiago es la capital de Chile y alberga a más de la mitad de la población del país."
+    },
+    {
+      "round": 28,
+      "difficultyTier": 6,
+      "country": "Colombia",
+      "capital": "Bogotá",
+      "prompt": "¿Cuál es la capital de Colombia?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Medellín", "fullText": "Medellín es la segunda ciudad más grande de Colombia, pero no es la capital." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Cali", "fullText": "Cali es la tercera ciudad de Colombia, pero no es la capital." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Cartagena", "fullText": "Cartagena es una famosa ciudad costera de Colombia, pero no es la capital." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Bogotá", "fullText": "Bogotá es la capital de Colombia.", "isCorrect": true }
+      ],
+      "explanation": "Bogotá es la capital de Colombia y está ubicada a 2.600 metros sobre el nivel del mar."
+    },
+    {
+      "round": 29,
+      "difficultyTier": 6,
+      "country": "Uruguay",
+      "capital": "Montevideo",
+      "prompt": "¿Cuál es la capital de Uruguay?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Punta del Este", "fullText": "Punta del Este es una famosa ciudad turística de Uruguay, pero no es la capital." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Montevideo", "fullText": "Montevideo es la capital de Uruguay.", "isCorrect": true },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Salto", "fullText": "Salto es la segunda ciudad más grande de Uruguay, pero no es la capital." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Colonia del Sacramento", "fullText": "Colonia del Sacramento es una ciudad histórica de Uruguay, pero no es la capital." }
+      ],
+      "explanation": "Montevideo es la capital de Uruguay y el hogar de casi la mitad de la población del país."
+    },
+    {
+      "round": 30,
+      "difficultyTier": 6,
+      "country": "Paraguay",
+      "capital": "Asunción",
+      "prompt": "¿Cuál es la capital de Paraguay?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Ciudad del Este", "fullText": "Ciudad del Este es la segunda ciudad más grande de Paraguay, pero no es la capital." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Encarnación", "fullText": "Encarnación es una ciudad de Paraguay, pero no es la capital." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Asunción", "fullText": "Asunción es la capital de Paraguay.", "isCorrect": true },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Luque", "fullText": "Luque es una ciudad cercana a Asunción, pero no es la capital." }
+      ],
+      "explanation": "Asunción es la capital de Paraguay, fundada en 1537, es una de las ciudades más antiguas de América del Sur."
+    },
+    {
+      "round": 31,
+      "difficultyTier": 7,
+      "country": "Eslovenia",
+      "capital": "Liubliana",
+      "prompt": "¿Cuál es la capital de Eslovenia?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Zagreb", "fullText": "Zagreb es la capital de Croacia, no de Eslovenia." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Bratislava", "fullText": "Bratislava es la capital de Eslovaquia, no de Eslovenia." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Sarajevo", "fullText": "Sarajevo es la capital de Bosnia y Herzegovina, no de Eslovenia." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Liubliana", "fullText": "Liubliana es la capital de Eslovenia.", "isCorrect": true }
+      ],
+      "explanation": "Liubliana (Ljubljana) es la capital de Eslovenia. Es famosa por su castillo y sus canales."
+    },
+    {
+      "round": 32,
+      "difficultyTier": 7,
+      "country": "Eslovaquia",
+      "capital": "Bratislava",
+      "prompt": "¿Cuál es la capital de Eslovaquia?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Praga", "fullText": "Praga es la capital de la República Checa, no de Eslovaquia." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Liubliana", "fullText": "Liubliana es la capital de Eslovenia, no de Eslovaquia." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Bratislava", "fullText": "Bratislava es la capital de Eslovaquia.", "isCorrect": true },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Varsovia", "fullText": "Varsovia es la capital de Polonia, no de Eslovaquia." }
+      ],
+      "explanation": "Bratislava es la capital de Eslovaquia. Es la única capital del mundo que bordea dos países."
+    },
+    {
+      "round": 33,
+      "difficultyTier": 7,
+      "country": "Croacia",
+      "capital": "Zagreb",
+      "prompt": "¿Cuál es la capital de Croacia?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Dubrovnik", "fullText": "Dubrovnik es una famosa ciudad costera de Croacia, pero no es la capital." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Split", "fullText": "Split es la segunda ciudad más grande de Croacia, pero no es la capital." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Rijeka", "fullText": "Rijeka es la tercera ciudad de Croacia, pero no es la capital." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Zagreb", "fullText": "Zagreb es la capital de Croacia.", "isCorrect": true }
+      ],
+      "explanation": "Zagreb es la capital de Croacia. Es una ciudad con gran herencia austrohúngara."
+    },
+    {
+      "round": 34,
+      "difficultyTier": 7,
+      "country": "Serbia",
+      "capital": "Belgrado",
+      "prompt": "¿Cuál es la capital de Serbia?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Belgrado", "fullText": "Belgrado es la capital de Serbia.", "isCorrect": true },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Sarajevo", "fullText": "Sarajevo es la capital de Bosnia y Herzegovina, no de Serbia." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Skopie", "fullText": "Skopie es la capital de Macedonia del Norte, no de Serbia." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Bucarest", "fullText": "Bucarest es la capital de Rumania, no de Serbia." }
+      ],
+      "explanation": "Belgrado es la capital de Serbia y la ciudad más grande de los Balcanes occidentales."
+    },
+    {
+      "round": 35,
+      "difficultyTier": 7,
+      "country": "Estonia",
+      "capital": "Tallin",
+      "prompt": "¿Cuál es la capital de Estonia?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Riga", "fullText": "Riga es la capital de Letonia, no de Estonia." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Vilna", "fullText": "Vilna es la capital de Lituania, no de Estonia." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Tallin", "fullText": "Tallin es la capital de Estonia.", "isCorrect": true },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Helsinki", "fullText": "Helsinki es la capital de Finlandia, no de Estonia." }
+      ],
+      "explanation": "Tallin es la capital de Estonia. Tiene uno de los cascos históricos medievales mejor conservados de Europa."
+    },
+    {
+      "round": 36,
+      "difficultyTier": 8,
+      "country": "Letonia",
+      "capital": "Riga",
+      "prompt": "¿Cuál es la capital de Letonia?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Tallin", "fullText": "Tallin es la capital de Estonia, no de Letonia." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Riga", "fullText": "Riga es la capital de Letonia.", "isCorrect": true },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Vilna", "fullText": "Vilna es la capital de Lituania, no de Letonia." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Minsk", "fullText": "Minsk es la capital de Bielorrusia, no de Letonia." }
+      ],
+      "explanation": "Riga es la capital de Letonia y la ciudad más grande de los países bálticos."
+    },
+    {
+      "round": 37,
+      "difficultyTier": 8,
+      "country": "Lituania",
+      "capital": "Vilna",
+      "prompt": "¿Cuál es la capital de Lituania?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Riga", "fullText": "Riga es la capital de Letonia, no de Lituania." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Tallin", "fullText": "Tallin es la capital de Estonia, no de Lituania." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Varsovia", "fullText": "Varsovia es la capital de Polonia, no de Lituania." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Vilna", "fullText": "Vilna es la capital de Lituania.", "isCorrect": true }
+      ],
+      "explanation": "Vilna (Vilnius) es la capital de Lituania y fue declarada capital cultural europea en 2009."
+    },
+    {
+      "round": 38,
+      "difficultyTier": 8,
+      "country": "Georgia",
+      "capital": "Tiflis",
+      "prompt": "¿Cuál es la capital de Georgia (el país)?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Tiflis", "fullText": "Tiflis es la capital de Georgia.", "isCorrect": true },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Bakú", "fullText": "Bakú es la capital de Azerbaiyán, no de Georgia." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Ereván", "fullText": "Ereván es la capital de Armenia, no de Georgia." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Tashkent", "fullText": "Tashkent es la capital de Uzbekistán, no de Georgia." }
+      ],
+      "explanation": "Tiflis (Tbilisi) es la capital de Georgia. Está ubicada en el Cáucaso entre Europa y Asia."
+    },
+    {
+      "round": 39,
+      "difficultyTier": 8,
+      "country": "Armenia",
+      "capital": "Ereván",
+      "prompt": "¿Cuál es la capital de Armenia?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Bakú", "fullText": "Bakú es la capital de Azerbaiyán, no de Armenia." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Tiflis", "fullText": "Tiflis es la capital de Georgia, no de Armenia." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Ereván", "fullText": "Ereván es la capital de Armenia.", "isCorrect": true },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Bishkek", "fullText": "Bishkek es la capital de Kirguistán, no de Armenia." }
+      ],
+      "explanation": "Ereván (Yereván) es la capital de Armenia y una de las ciudades más antiguas del mundo."
+    },
+    {
+      "round": 40,
+      "difficultyTier": 8,
+      "country": "Azerbaiyán",
+      "capital": "Bakú",
+      "prompt": "¿Cuál es la capital de Azerbaiyán?",
+      "options": [
+        { "id": "A", "enemyLabel": "A", "boardText": "A — Ereván", "fullText": "Ereván es la capital de Armenia, no de Azerbaiyán." },
+        { "id": "B", "enemyLabel": "B", "boardText": "B — Tiflis", "fullText": "Tiflis es la capital de Georgia, no de Azerbaiyán." },
+        { "id": "C", "enemyLabel": "C", "boardText": "C — Astaná", "fullText": "Astaná es la capital de Kazajistán, no de Azerbaiyán." },
+        { "id": "D", "enemyLabel": "D", "boardText": "D — Bakú", "fullText": "Bakú es la capital de Azerbaiyán.", "isCorrect": true }
+      ],
+      "explanation": "Bakú es la capital de Azerbaiyán y la ciudad más grande del Cáucaso. Es conocida por sus torres llameantes."
+    }
+  ]
+}

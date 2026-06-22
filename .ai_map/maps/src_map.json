@@ -1,0 +1,43 @@
+{
+  "directory": "src",
+  "description": "Frontend source code (React/Vite)",
+  "files": {
+    "src/style.css": {
+      "exports": {
+        "selectors": [
+          ":root",
+          "body, html",
+          "#renderCanvas",
+          ".ui-overlay",
+          ".interactive",
+          ".glass-panel",
+          ".btn-primary",
+          ".btn-primary::before",
+          ".btn-primary:hover::before",
+          ".btn-primary:hover",
+          ".btn-primary:active",
+          ".btn-secondary",
+          ".btn-secondary:hover",
+          "@keyframes slideUpFade",
+          "@keyframes fadeIn",
+          "@keyframes neonPulse",
+          "@keyframes criticalBlink",
+          "@keyframes heartbeat",
+          "@keyframes damageRipple",
+          "@keyframes shake",
+          "@keyframes scaleIn",
+          "@keyframes gradientShift",
+          ".animate-slideup",
+          ".animate-scalein",
+          ".animate-fadein",
+          ".neon-pulse",
+          "#hud-crosshair-dot",
+          "#hud-crosshair-dot.aimed",
+          "#damage-overlay",
+          "#damage-overlay.flash"
+        ]
+      }
+    }
+  },
+  "generated_at": "2026-06-22T12:44:01Z"
+}

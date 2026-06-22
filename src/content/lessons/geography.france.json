@@ -1,0 +1,36 @@
+{
+  "id": "geo-france-capital-001",
+  "subject": "Geografía",
+  "lessonId": "geo-france-basic",
+  "prompt": "¿Cuál es la capital de Francia?",
+  "type": "single_choice",
+  "options": [
+    {
+      "id": "A",
+      "enemyLabel": "A",
+      "boardText": "A — Berlín",
+      "fullText": "Berlín es la capital de Alemania."
+    },
+    {
+      "id": "B",
+      "enemyLabel": "B",
+      "boardText": "B — París",
+      "fullText": "París es la capital de Francia.",
+      "isCorrect": true
+    },
+    {
+      "id": "C",
+      "enemyLabel": "C",
+      "boardText": "C — Brasilia",
+      "fullText": "Brasilia es la capital de Brasil."
+    },
+    {
+      "id": "D",
+      "enemyLabel": "D",
+      "boardText": "D",
+      "fullText": "Roma es la capital de Italia."
+    }
+  ],
+  "explanation": "París es la capital de Francia.",
+  "difficulty": 1
+}

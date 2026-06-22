@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "ctx hook",
+            "statusMessage": "Refreshing AI map"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "ctx hook",
+            "statusMessage": "Refreshing AI map"
+          }
+        ]
+      }
+    ]
+  }
+}

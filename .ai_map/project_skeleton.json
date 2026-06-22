@@ -1,0 +1,169 @@
+{
+  "project_root": "C:\\Users\\angel\\Juegos-didacticos",
+  "generated_at": "2026-06-22T12:44:01Z",
+  "nav_hint": "AGENT NAVIGATION — Read this file first (Layer 1). Then read '.ai_map/maps/<dir>_map.json' for the relevant directory (Layer 2). Then read '.ai_map/manifests/<path>.json' for a specific file (Layer 3). Then open only the exact line range in the source file (Layer 4).",
+  "directories": {
+    "app": {
+      "description": "Application source root",
+      "subdirectories": [],
+      "files": [
+        "dummy.py"
+      ],
+      "map_file": ".ai_map/maps/app_map.json"
+    },
+    "tests": {
+      "description": "Durable automated test files and pytest configurations",
+      "subdirectories": [],
+      "files": [],
+      "map_file": ".ai_map/maps/tests_map.json"
+    },
+    "src": {
+      "description": "Frontend source code (React/Vite)",
+      "subdirectories": [
+        "assets",
+        "content",
+        "core",
+        "economy",
+        "education",
+        "enemies",
+        "environment",
+        "gameplay",
+        "rounds",
+        "ui",
+        "ui3d",
+        "utils",
+        "weapons"
+      ],
+      "files": [
+        "style.css"
+      ],
+      "map_file": ".ai_map/maps/src_map.json"
+    },
+    "src/assets": {
+      "description": "src/assets directory",
+      "subdirectories": [],
+      "files": [],
+      "map_file": ".ai_map/maps/src-assets_map.json"
+    },
+    "src/content": {
+      "description": "src/content directory",
+      "subdirectories": [
+        "lessons",
+        "questionSets"
+      ],
+      "files": [],
+      "map_file": ".ai_map/maps/src-content_map.json"
+    },
+    "src/content/lessons": {
+      "description": "src/content/lessons directory",
+      "subdirectories": [],
+      "files": [],
+      "map_file": ".ai_map/maps/src-content_map.json"
+    },
+    "src/content/questionSets": {
+      "description": "src/content/questionSets directory",
+      "subdirectories": [],
+      "files": [],
+      "map_file": ".ai_map/maps/src-content_map.json"
+    },
+    "src/core": {
+      "description": "src/core directory",
+      "subdirectories": [],
+      "files": [],
+      "map_file": ".ai_map/maps/src-core_map.json"
+    },
+    "src/economy": {
+      "description": "src/economy directory",
+      "subdirectories": [],
+      "files": [],
+      "map_file": ".ai_map/maps/src-economy_map.json"
+    },
+    "src/education": {
+      "description": "src/education directory",
+      "subdirectories": [],
+      "files": [
+        "Plan-2.md"
+      ],
+      "map_file": ".ai_map/maps/src-education_map.json"
+    },
+    "src/enemies": {
+      "description": "src/enemies directory",
+      "subdirectories": [],
+      "files": [],
+      "map_file": ".ai_map/maps/src-enemies_map.json"
+    },
+    "src/environment": {
+      "description": "src/environment directory",
+      "subdirectories": [
+        "materials"
+      ],
+      "files": [
+        "Plan-3-Fases.md",
+        "Plan-3.md"
+      ],
+      "map_file": ".ai_map/maps/src-environment_map.json"
+    },
+    "src/environment/materials": {
+      "description": "src/environment/materials directory",
+      "subdirectories": [],
+      "files": [],
+      "map_file": ".ai_map/maps/src-environment_map.json"
+    },
+    "src/gameplay": {
+      "description": "src/gameplay directory",
+      "subdirectories": [],
+      "files": [],
+      "map_file": ".ai_map/maps/src-gameplay_map.json"
+    },
+    "src/rounds": {
+      "description": "src/rounds directory",
+      "subdirectories": [],
+      "files": [],
+      "map_file": ".ai_map/maps/src-rounds_map.json"
+    },
+    "src/ui": {
+      "description": "src/ui directory",
+      "subdirectories": [],
+      "files": [],
+      "map_file": ".ai_map/maps/src-ui_map.json"
+    },
+    "src/ui3d": {
+      "description": "src/ui3d directory",
+      "subdirectories": [],
+      "files": [],
+      "map_file": ".ai_map/maps/src-ui3d_map.json"
+    },
+    "src/utils": {
+      "description": "src/utils directory",
+      "subdirectories": [],
+      "files": [],
+      "map_file": ".ai_map/maps/src-utils_map.json"
+    },
+    "src/weapons": {
+      "description": "src/weapons directory",
+      "subdirectories": [],
+      "files": [],
+      "map_file": ".ai_map/maps/src-weapons_map.json"
+    },
+    "public": {
+      "description": "Static public assets",
+      "subdirectories": [],
+      "files": [],
+      "map_file": ".ai_map/maps/public_map.json"
+    },
+    ".": {
+      "description": "Project root configuration and entry points",
+      "subdirectories": [
+        "app",
+        "tests",
+        "src",
+        "public"
+      ],
+      "files": [
+        "package.json",
+        "vite.config.ts"
+      ],
+      "map_file": ".ai_map/maps/root_map.json"
+    }
+  }
+}

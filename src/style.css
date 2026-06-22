@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
+
+:root {
+  --bg-dark: #0a0a12;
+  --bg-card: rgba(15, 15, 27, 0.75);
+  --accent-blue: #00d2ff;
+  --accent-purple: #9d4edd;
+  --accent-red: #ff3366;
+  --accent-green: #00f5d4;
+  --text-primary: #f8f9fa;
+  --text-secondary: #adb5bd;
+  --font-main: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Sombras neón */
+  --glow-blue: 0 0 12px rgba(0, 210, 255, 0.6), 0 0 24px rgba(0, 210, 255, 0.3);
+  --glow-green: 0 0 12px rgba(0, 245, 212, 0.6), 0 0 24px rgba(0, 245, 212, 0.3);
+  --glow-red: 0 0 12px rgba(255, 51, 102, 0.6), 0 0 24px rgba(255, 51, 102, 0.3);
+  --glow-purple: 0 0 12px rgba(157, 78, 221, 0.6), 0 0 24px rgba(157, 78, 221, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--bg-dark);
+  font-family: var(--font-main);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#renderCanvas {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  outline: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* ============================================================
+   OVERLAYS DE UI HTML
+   ============================================================ */
+.ui-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+}
+
+.interactive {
+  pointer-events: auto;
+}
+
+/* ============================================================
+   GLASS PANEL (Glassmorphism avanzado)
+   ============================================================ */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* ============================================================
+   BOTONES
+   ============================================================ */
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-purple) 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 0.85rem 2.5rem;
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 20px rgba(0, 210, 255, 0.4), inset 0 1px 0 rgba(255,255,255,0.2);
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+  transition: left 0.4s ease;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 210, 255, 0.6), inset 0 1px 0 rgba(255,255,255,0.2);
+}
+
+.btn-primary:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 2px 10px rgba(0, 210, 255, 0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 0.75rem 2rem;
+  font-family: var(--font-main);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  border-color: rgba(0, 210, 255, 0.4);
+  color: var(--accent-blue);
+  background: rgba(0, 210, 255, 0.05);
+}
+
+/* ============================================================
+   ANIMACIONES GLOBALES
+   ============================================================ */
+
+/* Aparición desde abajo con fade */
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade in simple */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Pulso de neón para bordes/iconos */
+@keyframes neonPulse {
+  0%, 100% { box-shadow: 0 0 8px rgba(0, 210, 255, 0.4), 0 0 16px rgba(0, 210, 255, 0.2); }
+  50% { box-shadow: 0 0 16px rgba(0, 210, 255, 0.8), 0 0 32px rgba(0, 210, 255, 0.4), 0 0 48px rgba(0, 210, 255, 0.15); }
+}
+
+/* Parpadeo rápido del indicador crítico */
+@keyframes criticalBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* Latido para texto de daño */
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  14% { transform: scale(1.15); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.1); }
+  70% { transform: scale(1); }
+}
+
+/* Ondas de impacto cuando el jugador recibe daño */
+@keyframes damageRipple {
+  0% { box-shadow: inset 0 0 0px rgba(255, 51, 102, 0); }
+  20% { box-shadow: inset 0 0 60px rgba(255, 51, 102, 0.5); }
+  100% { box-shadow: inset 0 0 0px rgba(255, 51, 102, 0); }
+}
+
+/* Shake para UI de daño */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-6px); }
+  40% { transform: translateX(6px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+
+/* Entrada con zoom para pantallas de inicio/fin */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Gradiente animado para título */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ============================================================
+   CLASES DE ANIMACIÓN UTILITARIAS
+   ============================================================ */
+.animate-slideup {
+  animation: slideUpFade 0.4s cubic-bezier(0.34, 1.2, 0.64, 1) forwards;
+}
+
+.animate-scalein {
+  animation: scaleIn 0.35s cubic-bezier(0.34, 1.4, 0.64, 1) forwards;
+}
+
+.animate-fadein {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.neon-pulse {
+  animation: neonPulse 2s ease-in-out infinite;
+}
+
+/* ============================================================
+   HUD — CROSSHAIR AVANZADO
+   ============================================================ */
+#hud-crosshair-dot {
+  width: 5px;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0, 210, 255, 0.8);
+  transition: transform 0.1s ease, background-color 0.1s ease;
+}
+
+#hud-crosshair-dot.aimed {
+  background-color: var(--accent-red);
+  box-shadow: var(--glow-red);
+  transform: scale(1.4);
+}
+
+/* ============================================================
+   DAMAGE SCREEN OVERLAY
+   ============================================================ */
+#damage-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+  background: transparent;
+  transition: background 0.1s ease;
+}
+
+#damage-overlay.flash {
+  animation: damageRipple 0.5s ease-out forwards;
+}
+
+/* ============================================================
+   SCREEN OVERLAY BACKGROUNDS
+   ============================================================ */
+.screen-overlay-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at center, rgba(15,15,27,0.82) 0%, rgba(10,10,18,0.97) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+/* ============================================================
+   ACCESIBILIDAD
+   ============================================================ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

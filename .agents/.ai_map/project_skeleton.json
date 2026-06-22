@@ -1,0 +1,6 @@
+{
+  "project_root": "C:\\Users\\angel\\Juegos-didacticos\\.agents",
+  "generated_at": "2026-06-22T11:50:37Z",
+  "nav_hint": "AGENT NAVIGATION — Read this file first (Layer 1). Then read '.ai_map/maps/<dir>_map.json' for the relevant directory (Layer 2). Then read '.ai_map/manifests/<path>.json' for a specific file (Layer 3). Then open only the exact line range in the source file (Layer 4).",
+  "directories": {}
+}

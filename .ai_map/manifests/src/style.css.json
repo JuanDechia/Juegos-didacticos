@@ -1,0 +1,174 @@
+{
+  "file_path": "src/style.css",
+  "language": "css",
+  "docstring": "",
+  "sections": [
+    {
+      "name": "(top)",
+      "start_line": 1,
+      "selectors": [
+        {
+          "selector": ":root",
+          "start_line": 3,
+          "end_line": 19
+        },
+        {
+          "selector": "body, html",
+          "start_line": 28,
+          "end_line": 37
+        },
+        {
+          "selector": "#renderCanvas",
+          "start_line": 39,
+          "end_line": 48
+        },
+        {
+          "selector": ".ui-overlay",
+          "start_line": 53,
+          "end_line": 65
+        },
+        {
+          "selector": ".interactive",
+          "start_line": 67,
+          "end_line": 69
+        },
+        {
+          "selector": ".glass-panel",
+          "start_line": 74,
+          "end_line": 83
+        },
+        {
+          "selector": ".btn-primary",
+          "start_line": 88,
+          "end_line": 104
+        },
+        {
+          "selector": ".btn-primary::before",
+          "start_line": 106,
+          "end_line": 113
+        },
+        {
+          "selector": ".btn-primary:hover::before",
+          "start_line": 115,
+          "end_line": 117
+        },
+        {
+          "selector": ".btn-primary:hover",
+          "start_line": 119,
+          "end_line": 122
+        },
+        {
+          "selector": ".btn-primary:active",
+          "start_line": 124,
+          "end_line": 127
+        },
+        {
+          "selector": ".btn-secondary",
+          "start_line": 129,
+          "end_line": 141
+        },
+        {
+          "selector": ".btn-secondary:hover",
+          "start_line": 143,
+          "end_line": 147
+        },
+        {
+          "selector": "@keyframes slideUpFade",
+          "start_line": 154,
+          "end_line": 163
+        },
+        {
+          "selector": "@keyframes fadeIn",
+          "start_line": 166,
+          "end_line": 169
+        },
+        {
+          "selector": "@keyframes neonPulse",
+          "start_line": 172,
+          "end_line": 175
+        },
+        {
+          "selector": "@keyframes criticalBlink",
+          "start_line": 178,
+          "end_line": 181
+        },
+        {
+          "selector": "@keyframes heartbeat",
+          "start_line": 184,
+          "end_line": 190
+        },
+        {
+          "selector": "@keyframes damageRipple",
+          "start_line": 193,
+          "end_line": 197
+        },
+        {
+          "selector": "@keyframes shake",
+          "start_line": 200,
+          "end_line": 206
+        },
+        {
+          "selector": "@keyframes scaleIn",
+          "start_line": 209,
+          "end_line": 218
+        },
+        {
+          "selector": "@keyframes gradientShift",
+          "start_line": 221,
+          "end_line": 225
+        },
+        {
+          "selector": ".animate-slideup",
+          "start_line": 230,
+          "end_line": 232
+        },
+        {
+          "selector": ".animate-scalein",
+          "start_line": 234,
+          "end_line": 236
+        },
+        {
+          "selector": ".animate-fadein",
+          "start_line": 238,
+          "end_line": 240
+        },
+        {
+          "selector": ".neon-pulse",
+          "start_line": 242,
+          "end_line": 244
+        },
+        {
+          "selector": "#hud-crosshair-dot",
+          "start_line": 249,
+          "end_line": 256
+        },
+        {
+          "selector": "#hud-crosshair-dot.aimed",
+          "start_line": 258,
+          "end_line": 262
+        },
+        {
+          "selector": "#damage-overlay",
+          "start_line": 267,
+          "end_line": 274
+        },
+        {
+          "selector": "#damage-overlay.flash",
+          "start_line": 276,
+          "end_line": 278
+        },
+        {
+          "selector": ".screen-overlay-bg",
+          "start_line": 283,
+          "end_line": 292
+        },
+        {
+          "selector": ".sr-only",
+          "start_line": 297,
+          "end_line": 306
+        }
+      ],
+      "end_line": 306
+    }
+  ]
+}

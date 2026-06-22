@@ -1,0 +1,16 @@
+{
+  "directory": "app",
+  "description": "Application source root",
+  "files": {
+    "app/dummy.py": {
+      "imports": [],
+      "exports": {
+        "classes": [],
+        "functions": [
+          "hello"
+        ]
+      }
+    }
+  },
+  "generated_at": "2026-06-22T12:44:01Z"
+}

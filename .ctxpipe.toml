@@ -1,0 +1,19 @@
+[project]
+output_dir = ".ai_map"
+protected_roots = ["app/", "tests/"]
+target_dirs = ["app", "scripts", "tests", "src", "public"]
+root_files = ["config.py", "requirements.txt", "run.py", "wsgi.py", "package.json", "vite.config.ts"]
+
+[ignore]
+dirs = ["__pycache__", "vendor", "node_modules", ".git", ".ai_map", "scratch", "prototypes"]
+
+[commands]
+style = "ctx"
+
+[descriptions]
+"." = "Project root configuration and entry points"
+"app" = "Application source root"
+"scripts" = "Developer tools and workflow scripts"
+"tests" = "Durable automated test files and pytest configurations"
+"src" = "Frontend source code (React/Vite)"
+"public" = "Static public assets"

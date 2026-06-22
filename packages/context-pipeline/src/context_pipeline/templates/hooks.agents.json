@@ -1,0 +1,23 @@
+{
+  "ctx-map-refresh": {
+    "PostToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "{{AGENTS_DIR}}\\ctx-hook.cmd",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "{{AGENTS_DIR}}\\ctx-hook.cmd",
+        "timeout": 30
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "ctx-map-refresh": {
+    "PostToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "C:\\Users\\angel\\Juegos-didacticos\\.agents\\ctx-hook.cmd",
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "C:\\Users\\angel\\Juegos-didacticos\\.agents\\ctx-hook.cmd",
+        "timeout": 30
+      }
+    ]
+  }
+}
